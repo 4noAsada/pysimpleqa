@@ -4,14 +4,13 @@ import sys
 def start(filename):
     with open(filename, encoding='utf-8') as file:
         lines = file.readlines()
-        for index in range(len(lines), step=2):
-            print(lines[index])
+        for index in range(0, len(lines), 2):
+            print(lines[index][:-1])
             answer = input('(\\a for answer) >>> ')
-            while answer != lines[index]:
+            while answer != lines[index + 1][:-1]:
                 if answer == "\\a":
-                    print(lines[index + 1])
-                else:
-                    answer = input('(wrong; \\a for answer) >>> ')
+                    print(lines[index + 1][:-1])
+                answer = input('(wrong; \\a for answer) >>> ')
 
 
 if __name__ == "__main__":
