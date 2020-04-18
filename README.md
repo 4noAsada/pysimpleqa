@@ -3,12 +3,11 @@ A simple commandline text flashcard program.
 ![Demo](demo.png)
 
 # Installation
-## To install
 Just clone the repository
 ```shell script
 git clone https://github.com/4noAsada/pysimpleqa.git
 ```
-## To use
+# Usage 
 ```shell script
 python3 main.py [QA files...]
 ```
