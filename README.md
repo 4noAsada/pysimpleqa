@@ -4,7 +4,7 @@ A simple commandline text flashcard program.
 
 # Installation
 ## To install
-Clone the repository and run main.py with a desired QA file.
+Just clone the repository
 ```shell script
 git clone https://github.com/4noAsada/pysimpleqa.git
 ```
